@@ -1,0 +1,63 @@
+﻿<div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+		<label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up">
+		<label for="tab-2" class="tab">Sign Up</label>
+
+
+		<div class="login-form">
+			<form action="/Auth/Signup" method="post">
+				<div class="sign-in-htm">
+					<div class="group">
+						<label for="user" class="label">Username</label>
+						<input id="user" name="Username" type="text" class="input">
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" name="Password" type="password" class="input" data-type="password">
+					</div>
+
+					<div class="group">
+						<input type="submit" class="button" value="Sign In">
+					</div>
+
+					<div asp-validation-summary="All"></div>
+
+
+				</div>
+
+			</form>
+
+
+			<form action="/Auth/Signup" method="post">
+				@* 			@using (Html.BeginForm("Signup", "Auth", FormMethod.Post))
+				{ *@
+				<div class="sign-up-htm">
+					<div class="group">
+						<label for="user" class="label">Username</label>
+						<input id="user" name="Username" type="text" class="input">
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" name="Password" type="password" class="input" data-type="password">
+					</div>
+
+					<div class="group">
+						<label for="email" class="label">Email Address</label>
+						<input id="email" name="Email" type="email" class="input">
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Sign Up">
+					</div>
+				</div>
+
+				<div asp-validation-summary="All"></div>
+
+				@* } *@
+			</form>
+
+
+		</div>
+	</div>
+</div>

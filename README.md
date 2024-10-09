@@ -14,3 +14,4 @@
 ## Mailjet Integration
 - Add your Mailjet API Key and Secret to the `appsettings.json`.
 - Confirmation emails are sent after successful registration.
+.
